@@ -114,27 +114,27 @@ Submission of simulations and calculation of the CPU time were performed with th
 
 The results of running the described set of simulations are given in the table below.
 
-Perfectly plastic behavior (h0 case)
+#### Perfectly plastic behavior (h0 case)
 
-|Scheme | Pole Figure | CPU time |
+|Scheme | Pole Figure | CPU time, sec |
 |:---:|:---:|:---:|
 | FC |![1](https://lh3.googleusercontent.com/sslN37HA7i247npuasrGh_c9LtzTjWzAdOIT8K8N3lE=s0 "1.png")|**2.12**|
 | affine |![2](https://lh3.googleusercontent.com/Wd7z9hHULinrCBsVEonPdRANJ3nFXzqFRLRuy8FICHg=s0 "2.png")|**10.46**|
 | secant |![3](https://lh3.googleusercontent.com/Ipk1AtXmX3x9APk7nu3XJgIvURfw1wg8tr2t_x0V8Ao=s0 "3.png")|**4.42**|
 | tangent |![4](https://lh3.googleusercontent.com/HWfPw1UDpmisZ74kxBqMAz9cKihoSUgwgFOrVRE_qJ0=s0 "4.png")|**7.11**|
 
-Linear hardening (h1 case)
+#### Linear hardening (h1 case)
 
-|Scheme | Pole Figure | CPU time |
+|Scheme | Pole Figure | CPU time, sec |
 |:---:|:---:|:---:|
 | FC |![5](https://lh3.googleusercontent.com/xdvmLFkaabl85RIAls4Kbhb_E-8aO329fxEDZtJEmL4=s0 "5.png")|**2.18**|
 | affine |![6](https://lh3.googleusercontent.com/r_wNlNgfnbBiFaBR5CI6oT87gr81F-CFj53I11jzSFQ=s0 "6.png")|**10.24**|
 | secant |![7](https://lh3.googleusercontent.com/O3aYYM-wxjWh1weKnIfOgjEL0mIGbH_KLdogeqZ0YuM=s0 "7.png")|**4.40**|
 | tangent |![8](https://lh3.googleusercontent.com/v74kX8_AzcvTOWta7owdtyWSRyVUyKRCEbxf7eMe_Zw=s0 "8.png")|**7.13**|
 
-Non-linear hardening (h2 case)
+#### Non-linear hardening (h2 case)
 
-|Scheme | Pole Figure | CPU time |
+|Scheme | Pole Figure | CPU time, sec |
 |:---:|:---:|:---:|
 | FC |![9](https://lh3.googleusercontent.com/4UhC8VsuSkZmKte2nqePj2ACW4Dk_e4Oby-gTCZ7HM4=s0 "9.png")|**2.62**|
 | affine |![10](https://lh3.googleusercontent.com/wiW1Mub4hMdJFtMLqQyL2k10qiw3F6f88dk1wRYNlhk=s0 "10.png")|**10.52**|
