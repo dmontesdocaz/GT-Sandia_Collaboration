@@ -2,7 +2,7 @@
 layout:     	post
 title:      	A study of VPSC computational cost
 date:       	2015-09-14 12:00
-author:     	Yang Wu, Marat I. Latypov
+author:     	Yang Wu
 tags:         	
 ---
 
@@ -18,11 +18,15 @@ To focus on the effect of the interaction scheme on the computational cost of VP
 ## Boundary conditions
 
 The specimen was under uniaxial tension along $$x_{3}$$ up to $$\epsilon_{33}$$ = 100%. A Boundary Condition file was called by the main program. 
-``  50   3   0.02    298.         nsteps  ictrl  eqincr  temp
+
+{% highlight python %}  
+50   3   0.02    298.         nsteps  ictrl  eqincr  temp
 * boundary conditions
     -0.5     0.0      0.0        |    vel.grad
     0.0     -0.5     0.0                   |
-    0.0      0.0      1.0                  | ``
+    0.0      0.0      1.0                  |
+{% endhighlight %}
+
 In this first set of simulations, we used the  settings from the examples of VPSC7 software. We kept the number of incremental deformation steps as 50 and the magnitude of increment imposed to achieve the final deformation as 0.02. In the next report, we will study the impact on the computational time by these parameters.
 
 ## Initial texture
@@ -32,15 +36,19 @@ Our texture was represented by a set of 5000 equal-weight random orientations, w
 ## Convergence settings
 
 Default settings given in the VPSC manual (examples) were accepted:
-``*PRECISION SETTINGS FOR CONVERGENCE PROCEDURES (default values)
+
+{% highlight python %}
+*PRECISION SETTINGS FOR CONVERGENCE PROCEDURES (default values)
 0.001 0.001 0.001 0.001    errs,errd,errm,errso
 100 100 25     itmax:   max # of iter, external, internal and SO loops
 0  2  10  2    irsvar & jrsini,jrsfin,jrstep (dummy if irsvar=0)
-1              ibcinv (0: don't use <Bc>**-1, 1: use <Bc>**-1 in SC eq)``
+1              ibcinv (0: don't use <Bc>**-1, 1: use <Bc>**-1 in SC eq)
+{% endhighlight %}
+
 As can be seen, 0.001 is used for the relative tolerances allowed in the convergence procedures. And the maximum number of iterations are set as follow: 
-**ITMAXEXT :**  is the maximum number of iterations allowed in the convergence procedure of the loop over grain stress states.
-**ITMAXINT :**  is the maximum number of iterations allowed in the convergence procedure of the loop over the overall modulus.
-**ITMAXSO :**  is the maximum number of iterations associated with the *Second Order* loop.
+**ITMAXEXT:**  is the maximum number of iterations allowed in the convergence procedure of the loop over grain stress states.
+**ITMAXINT:**  is the maximum number of iterations allowed in the convergence procedure of the loop over the overall modulus.
+**ITMAXSO:**  is the maximum number of iterations associated with the *Second Order* loop.
 
 # Variable simulation settings
 
@@ -50,39 +58,43 @@ In the current set of simulations, two simulation settings were variable: the ha
 
 Three cases of hardening were studied (see Figure below):
 
-- **h0 :** Perfectly plastic material: 
-the most simple case, where there is no hardening (blue curve).
-- **h1 :** Linear hardening:
-the limit case of Voce hardening law corresponding to $$\tau_{1}^{s}=0 (red curve)$$
-- **h2 :** Non-linear hardening:
+- **h0**: Perfectly plastic material: 
+the most simple case, where there is no hardening (blue curve);
+- **h1**: Linear hardening:
+the limit case of Voce hardening law corresponding to $$\tau_{1}^{s}=0$$  (red curve);
+- **h2**: Non-linear hardening:
 high hardening rate observed at the onset of plasticity, and its decrease towards a constant hardening rate at large strains (black curve).
 
 ![enter image description here](https://lh3.googleusercontent.com/-YCOHGzVJlJs/VfVh7hWMuwI/AAAAAAAAAgE/YKe_6QSsIxk/s0/hardening.png "hardening.png")
 
-The hardening parameters for these three cases are found in the figure above and  were fed to **FILECRYS** file as tau0x, tau1x, thet0, thet1:
-``*Constitutive law
+The hardening parameters for these three cases are found in the figure above and  were fed to `FILECRYS` file as `tau0x`, `tau1x`, `thet0`, `thet1`:
+
+{% highlight python %}
+*Constitutive law
    0      Voce=0, MTS=1
    1      iratesens (0:rate insensitive, 1:rate sensitive)
    50     grsze --> grain size only matters if HPfactor is non-zero
  {110}<111> SLIP -------------------------------------------
  20                               nrsx
  1.0   0.0   0.2   0.2   0.        tau0x,tau1x,thet0,thet1, hpfac
- 1.0    1.0                          hlatex(1,im),im=1,nmodes``
+ 1.0    1.0                          hlatex(1,im),im=1,nmodes
+{% endhighlight %}
+
  This is an **h1** hardening case example. 
- 
+
 ## Interaction schemes
 
 There are 6 different interaction models provided by VPSC7 software. 
 ``*MODELING CONDITIONS FOR THE RUN
 0              interaction (0:FC,1:affine,2:secant,3:neff=10,4:tangent,5:SO)``
 
-**FC ** is the Taylor model, **affine**,**secant**,**neff=10**,**tangent** and **SO** are different self-consistent models.
+FC is the Taylor model, affine, secant, neff=10, tangent and SO are different self-consistent models.
 
 Four cases were studied:
 
-- **FC **
-- **affine**: $$M_{ijkl}^{(r),aff}=n\gamma_{0}\sum_{s}\frac{m_{ij}^{s}m_{kl}^{s}}{\tau_{0}^s}(\frac{m_{pq}^s\sigma_{pq}^{(r)}}{\tau_{0}^{s}})^{n-1}$$
-- **secant**: $$M_{ijkl}^{(r),sec}=\gamma_{0}\sum_{s}\frac{m_{ij}^{s}m_{kl}^{s}}{\tau_{0}^s}(\frac{m_{pq}^s\sigma_{pq}^{(r)}}{\tau_{0}^{s}})^{n-1}$$
+- **FC**
+- **affine**
+- **secant**
 - **tangent** 
 
 These simulations were run on a personal laptop. Here is the CPU and RAM information:
@@ -113,6 +125,7 @@ Texture | hardening | Interaction | Stress-Strain Curve| Pole Figure|Computation
 # Conclusions
 
 From this first set of simulations with a simple example, we can see that the interaction model significantly affects the computational time of VPSC. If we set Taylor model computational time as a reference, Affine SC model spends five times more time than FC, Secant model spends twice time more and Tangent model spends four times more. 
+
 From perfectly plastic to non-linear hardening material, for FC Taylor interaction model, the computational time increases from 2.12" to 2.62"; but for affine Self-Consistent interaction model, the computational time drops from 10.46" to 10.24", then increases to 10.52". Therefore, we can conclude that, for this simple uniaxial test, the hardening law barely affects the computational time.
 Next, we will study the impact of other simulation settings such as equivalent strain increment, etc. Also, other Boundary Conditions will be tested.
 
