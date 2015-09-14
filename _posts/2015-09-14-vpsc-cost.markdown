@@ -166,9 +166,13 @@ Next, we will study the impact of other simulation settings such as equivalent s
 In the parametric studies as the one discussed above, handling files and running the simulations manually can be tedious and time consuming. To automate the process, a Python script was prepared, which also calculates the CPU time spent for each simulation. 
 
 The workflow with the script was the following:
-1. a number of `vpsc.in` files were prepared with desired various simulation settings and stored in a folder.
-2. the script  copied the vpsc.in files one by one into the working folder and submitted a VPSC simulation with each of input files.
+
+1. a number of `vpsc.in` files were prepared with desired various simulation settings and stored in a folder
+
+2. the script  copied the vpsc.in files one by one into the working folder and submitted a VPSC simulation with each of input files
+
 3. the script calculated the CPU time required for each simulation and wrote the result into an output file (`cpuStats.out`)
+
 4. the script additionally copied output texture and stress--strain files so that the results can be also checked for each simulation run.
 
 The source code of the python script is given below.
