@@ -22,7 +22,7 @@ The specimen was under uniaxial tension along $$x_{3}$$ up to $$\epsilon_{33}$$ 
 {% highlight python %}  
 50   3   0.02    298.         nsteps  ictrl  eqincr  temp
 * boundary conditions
-    -0.5     0.0      0.0        |    vel.grad
+    -0.5     0.0      0.0                  |    vel.grad
     0.0     -0.5     0.0                   |
     0.0      0.0      1.0                  |
 {% endhighlight %}
@@ -31,7 +31,7 @@ In this first set of simulations, we used the  settings from the examples of VPS
 
 ## Initial texture
 
-Our texture was represented by a set of 5000 equal-weight random orientations, which were generated in Matlab by using [MTEX toolbox](http://mtex-toolbox.github.io/). 
+Our initial texture was represented by a set of 5000 equal-weight random orientations, which were generated in Matlab by using [MTEX toolbox](http://mtex-toolbox.github.io/). 
 
 ## Convergence settings
 
@@ -40,9 +40,9 @@ Default settings given in the VPSC manual (examples) were accepted:
 {% highlight python %}
 *PRECISION SETTINGS FOR CONVERGENCE PROCEDURES (default values)
 0.001 0.001 0.001 0.001    errs,errd,errm,errso
-100 100 25     itmax:   max # of iter, external, internal and SO loops
+100 100 25     itmax:   max no. of iter, external, internal and SO loops
 0  2  10  2    irsvar & jrsini,jrsfin,jrstep (dummy if irsvar=0)
-1              ibcinv (0: don't use <Bc>**-1, 1: use <Bc>**-1 in SC eq)
+1              ibcinv (0: do not use <Bc>**-1, 1: use <Bc>**-1 in SC eq)
 {% endhighlight %}
 
 As can be seen, 0.001 is used for the relative tolerances allowed in the convergence procedures. And the maximum number of iterations are set as follow: 
@@ -66,8 +66,9 @@ the limit case of Voce hardening law corresponding to $$\tau_{1}^{s}=0$$  (red c
 high hardening rate observed at the onset of plasticity, and its decrease towards a constant hardening rate at large strains (black curve).
 
 ![enter image description here](https://lh3.googleusercontent.com/-YCOHGzVJlJs/VfVh7hWMuwI/AAAAAAAAAgE/YKe_6QSsIxk/s0/hardening.png "hardening.png")
+Figure from Tome & Lebensohn, 
 
-The hardening parameters for these three cases are found in the figure above and  were fed to `FILECRYS` file as `tau0x`, `tau1x`, `thet0`, `thet1`:
+The hardening parameters for these three cases are found in the figure above and  were fed to **FILECRYS** file as `tau0x`, `tau1x`, `thet0`, `thet1`:
 
 {% highlight python %}
 *Constitutive law
@@ -80,13 +81,16 @@ The hardening parameters for these three cases are found in the figure above and
  1.0    1.0                          hlatex(1,im),im=1,nmodes
 {% endhighlight %}
 
- This is an **h1** hardening case example. 
+ This is an example of the part of **FILECRYS** input file for **h1** hardening case. 
 
 ## Interaction schemes
 
-There are 6 different interaction models provided by VPSC7 software. 
-``*MODELING CONDITIONS FOR THE RUN
+There are six different interaction models provided by VPSC7 software. 
+
+{% highlight python %}
+*MODELING CONDITIONS FOR THE RUN
 0              interaction (0:FC,1:affine,2:secant,3:neff=10,4:tangent,5:SO)``
+{% endhighlight %}
 
 FC is the Taylor model, affine, secant, neff=10, tangent and SO are different self-consistent models.
 
@@ -98,6 +102,7 @@ Four cases were studied:
 - **tangent** 
 
 These simulations were run on a personal laptop. Here is the CPU and RAM information:
+
 Item |Description 
  ---|---
 **CPU**| Intel(R) Core(TM) i7-4700MQ CPU @ 2.40 GHz 2.40 GHz
