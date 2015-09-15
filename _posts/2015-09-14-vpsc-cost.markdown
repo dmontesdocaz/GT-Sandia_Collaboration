@@ -144,13 +144,13 @@ The results of running the described set of simulations are given in the table b
 Stress--strain curves obtained in these simulations are shown in Figures below.
 
 Perfectly plastic behavior (h0 case)
-![h0](https://lh4.googleusercontent.com/6-fRHrbBWsPR0KD72gpmYU29J6qcww9KTXI09Btzs8QQzbGQW-peME6gFAgmAppwzoI4Cg=w1416-h625)
+![h0](https://lh5.googleusercontent.com/eXlKeEp8N480IRcpgAfLzVJe_TYI-9B3Dmnjet1ytX79P6vNSKtWLL4cjcgBmbBYrOagnQ=w1246-h793)
 
 Linear hardening (h1 case)
-![h1](https://lh3.googleusercontent.com/QceJT3dqyJvp7Epc5JeVRlFMOkZ4XL9MxUoYMezRLW7r7CTep4bCqE8gIsuqcKRLZEIw-w=w1416-h625)
+![h1](https://lh5.googleusercontent.com/wf_WAKEWN3UQloSds6BRYsc7QeYWs8iqubyfri30gLbztT165J84qi6IxBpQK5rNeZfyVw=w1246-h793)
 
 Non-linear hardening (h2 case)
-![h2](https://lh4.googleusercontent.com/Eb_N3p4R2pbwU_pYS-LAe1Z_qcJeGSh1rS2AnXyLUA4-ZqX9_zRfZtZQFjMQRyniNmef0g=w1416-h625)
+![h2](https://lh4.googleusercontent.com/aqgf220acRSYRkAHPvaq2Mwce7jdFAPfMb-jZz58MoqO0Uw70H1bl65dmoWlfgwh94aHZA=w1246-h793)
 
 
 # Conclusion
