@@ -1,16 +1,10 @@
-
-
-
-
 ---
 layout:     	post
-title:      	ABAQUS mesh and orientations from Dream.3D
+title:      	ABAQUS mesh and grain orientations from Dream.3D
 date:       	2015-10-19 12:00
 author:     	Marat Latypov
-tags:         
+tags:         	
 ---
-
-The post describes a MATLAB script for writing ABAQUS mesh and Euler angles from synthetic microstructures generated in Dream.3D.
 
 # Intro
 
