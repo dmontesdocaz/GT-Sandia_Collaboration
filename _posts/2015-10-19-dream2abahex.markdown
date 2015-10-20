@@ -42,7 +42,7 @@ This function call will result in creating a file `aba.inp` containing the mesh 
 
 # Example
 
-Let's generate a synthetic microstructure using statistics for a two-phase microstructure consisting of a primary phase and second-phase particles. For this purpose, we can use a prebuilt pipeline called `Two Phase Cubic Hexagonal Particles Equiaxed` (comes with Dream.3D ver. 6.2.0) that uses statistics file `TwoPhaseCubicHexParticlesEquiaxed.dream3d`. To this pipeline, we shall only add `Write Los Alamos FFT file` filter to write the voxel file (e.g. `2ph_64x64x64.vox`) from which we will create our mesh. 
+Let's generate a synthetic microstructure using statistics for a two-phase microstructure consisting of a primary phase and second-phase particles. For this purpose, we can use a prebuilt pipeline called `Two Phase Cubic Hexagonal Particles Equiaxed` (comes with Dream.3D ver. 6.2.0) that uses statistics file *TwoPhaseCubicHexParticlesEquiaxed.dream3d*. To this pipeline, we shall only add `Write Los Alamos FFT file` filter to write the voxel file (e.g. `2ph_64x64x64.vox`) from which we will create our mesh. 
 
 After the pipeline is successfully completed, we run the MATLAB script pointing to our Los Alamos FFT grid file and giving a name for ABAQUS input file by the following command 
 
