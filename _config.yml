@@ -1,18 +1,18 @@
 # Site settings
 
-title: Multiscale Modeling of Materials
+title: Two-Phase Composite Structure Property Linkage Establishment
 header-img: img/home-bg.jpg
-email: latmarat@gmail.com
+email: dmo7@gatech.edu
 description: "Physics-based models and simulations for process-structure-property linkages"
-baseurl: "/simulations-modeling"
-url: "http://mined-gatech.github.io"
-github_username:  latmarat
-project_repository: simulations-modeling
+baseurl: "/GT-Sandia_Collaboration"
+url: "http://dmontesdocaz.github.io"
+github_username:  dmontesdocaz
+project_repository: GT-Sandia_Collaboration
 
 # Build settings
 # Don't change these variables
 markdown: kramdown
-highlighter: pygments
+highlighter: 'rouge' 
 permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
