@@ -1,0 +1,40 @@
+---
+layout:     post
+title:     2D vs. 3D
+date:       2016-07-19 12:00:00
+author:     David Montes de Oca Zapiain
+tags: 		
+---
+In a previous post the periodic boundary conditions for the simulations to be performed were successfully implemented. Previously it was also decided to perform a high modulus perfectly plastic simulation.
+
+
+In this post the deformation mode that is going to be modelled is going to be defined. It has been decided to model a uniaxial tension/compression deformation in which the Microstructure is stretched in one direction and compressed in the other 2 directions by half of the total strain pulled in the stretched direction. 
+
+This simulation is volume conserving, this ensured by using the true strain definition to input the displacements.
+
+
+The decision that now must be addressed is whether to perform this simulation using the Plane Strain Elements (CPE4) in ABAQUS or use the 3D 8 node brick elements (C3D8). 
+
+Since the number of nodes is smaller for the 2D elements it was decided to try those first.
+
+
+The following are contour plots of a uniaxial tension/compression of a 600x600 pixel 2-phase random Microstructure, the amount of strain applied to this MS was of 1%.
+Also the contrast between the phases is 1.5 and the elastic modulus is of 1000GPA. 
+
+![Stress Strain COntours for 2D simulation]({{ site.url }}/GT-Sandia_Collaboration/img/post_img/img4.jpg)
+
+
+From the stress contours it can be seen the simulation converged and it might seem that the simulation worked correctly. Nevertheless if observed carefully it can be observed that in the strain contours and enormous amount of strain was localized, almost 6%. This is clearly not physical since the applied strain was only 1%.
+
+
+This might be caused by the fact that the CPE4 elements are constrained in the 3rd direction and thus cannot accommodate correctly the amount of strain imposed. 
+
+
+After seeing this results it was decided to proceed using C3D8 elements and model these 2D Microstructure as a 3D one but with only one layer. Thus like that the number of elements used to model this deformation remains the same but now since 3D elements are being used this allows for a correct accommodation of strain and actually physical responses. 
+
+
+This can be clearly observed in the following picture of a perfectly plastic 2-phase composite Microstructure, which was obtained from the polycrystal provided by Sandia using the method described in a previous post, deformed up to 1% with a yield contrast ratio of 1.5 between the 2 phases.
+
+![Stress Strain COntours for 2D simulation]({{ site.url }}/GT-Sandia_Collaboration/img/post_img/img5.jpg)
+
+From these contours it can be seen that the stresses and strains obtained are reasonable and physical, we do observe some localization but it does not exceed the macroscopic amount of strain applied. 
