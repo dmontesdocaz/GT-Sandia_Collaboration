@@ -21,7 +21,7 @@ Since the number of nodes is smaller for the 2D elements it was decided to try t
 The following are contour plots of a uniaxial tension/compression of a 600x600 pixel 2-phase random Microstructure, the amount of strain applied to this MS was of 1%.
 Also the contrast between the phases is 1.5 and the elastic modulus is of 1000GPA. 
 
-![Stress Strain COntours for 2D simulation]({{ site.url }}/GT-Sandia_Collaboration/img/post_img/img4.jpg)
+![Stress Strain Contours for 2D simulation]({{ site.url }}/GT-Sandia_Collaboration/img/post_img/img4.JPG)
 
 
 From the stress contours it can be seen the simulation converged and it might seem that the simulation worked correctly. Nevertheless if observed carefully it can be observed that in the strain contours and enormous amount of strain was localized, almost 6%. This is clearly not physical since the applied strain was only 1%.
@@ -35,6 +35,6 @@ After seeing this results it was decided to proceed using C3D8 elements and mode
 
 This can be clearly observed in the following picture of a perfectly plastic 2-phase composite Microstructure, which was obtained from the polycrystal provided by Sandia using the method described in a previous post, deformed up to 1% with a yield contrast ratio of 1.5 between the 2 phases.
 
-![Stress Strain COntours for 2D simulation]({{ site.url }}/GT-Sandia_Collaboration/img/post_img/img5.jpg)
+![Stress Strain COntours for 2D simulation]({{ site.url }}/GT-Sandia_Collaboration/img/post_img/img5.JPG)
 
 From these contours it can be seen that the stresses and strains obtained are reasonable and physical, we do observe some localization but it does not exceed the macroscopic amount of strain applied. 
