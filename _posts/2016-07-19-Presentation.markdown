@@ -25,7 +25,8 @@ vertical:		</section><section markdown="1">
 
 ## Outline
 
-* Stuff
+* Eva's Stuff
+* Mesh Sensitivity Study
 
 {{ page.horizontal}}
 
@@ -33,32 +34,32 @@ vertical:		</section><section markdown="1">
 
 * Link for Screenshot of Slide 1.
 
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img1.jpg)
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img1.JPG)
 
 {{ page.horizontal}}
 
 ## Slide 2
 
-* Link for Screenshot of Slide 2.
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img2.JPG)
 
 {{ page.vertical}}
 
 ## Slide 3
 
-* Link for Screenshot of Slide 3.
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img3.JPG)
 
 {{ page.horizontal}}
 
 ## Slide 4
 
-* Link for Screenshot of Slide 4.
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img4.JPG)
 
 
 {{ page.horizontal}}
 
 ## Slide 5
 
-* Link for Screenshot of Slide 5.
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img5.JPG)
 
 {{ page.vertical}}
 
