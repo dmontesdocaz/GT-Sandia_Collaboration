@@ -112,6 +112,14 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal}}
 
+## Questions to address
+
+* Property definition: Effective Yield, Damage
+* Which variable to output for Damage? How to transfer data?
+* Completeness of input data (how many data points?)
+* Standardization of 2-phase data generation (sample space bounding)
+
+
 <!-- End Here -->
 
 
