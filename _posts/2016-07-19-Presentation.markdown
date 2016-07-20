@@ -30,34 +30,34 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal}}
 
-## Slide 1
+## 
 
-* Link for Screenshot of Slide 1.
+
 
 ![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img1.JPG)
 
 {{ page.horizontal}}
 
-## Slide 2
+## 
 
 ![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img2.JPG)
 
-{{ page.vertical}}
+{{ page.horizontal}}
 
-## Slide 3
+## 
 
 ![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img3.JPG)
 
 {{ page.horizontal}}
 
-## Slide 4
+## 
 
 ![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img4.JPG)
 
 
 {{ page.horizontal}}
 
-## Slide 5
+## 
 
 ![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img5.JPG)
 
