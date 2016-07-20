@@ -25,8 +25,8 @@ vertical:		</section><section markdown="1">
 
 ## Outline
 
-* Eva's Stuff
 * Mesh Sensitivity Study
+* Pipeline DEMO
 
 {{ page.horizontal}}
 
@@ -61,15 +61,56 @@ vertical:		</section><section markdown="1">
 
 ![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img5.JPG)
 
-{{ page.vertical}}
+{{ page.horizontal}}
 
-## Last Slide
+## Workflow
 
-* Link for Screenshot of Last Slide.
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img6.JPG)
 
 
 {{ page.horizontal}}
 
+## 
+
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img7.JPG)
+
+
+{{ page.horizontal}}
+
+## PCA of 2-point statistics
+
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img8.JPG)
+
+
+{{ page.horizontal}}
+
+## Stress-Strain curve for 4 microstructures
+
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img9.JPG)
+
+
+{{ page.horizontal}}
+
+## Effective yield values 
+
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img10.JPG)
+
+
+{{ page.horizontal}}
+
+## Magnified Stress-Strain curve for 6 structures
+
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img11.JPG)
+
+
+{{ page.horizontal}}
+
+## Diiferent contrast
+
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img12.JPG)
+
+
+{{ page.horizontal}}
 
 <!-- End Here -->
 
