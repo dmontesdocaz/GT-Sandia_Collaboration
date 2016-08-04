@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:     Development of Model
-date:       2016-07-19 12:00:00
+date:       2016-08-04 12:00:00
 author:     David Montes de Oca Zapiain
 tags: 		
 ---
