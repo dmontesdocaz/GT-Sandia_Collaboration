@@ -70,54 +70,38 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal}}
 
-## 
+## Stress-Strain Curves for Contrast Ratio 1.5
 
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img7.JPG)
-
-
-{{ page.horizontal}}
-
-## PCA of 2-point statistics
-
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img8.JPG)
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img21.TIF)
 
 
 {{ page.horizontal}}
 
-## Stress-Strain curve for 4 microstructures
+## Stress-Strain Curves for Contrast Ratio 3
 
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img9.JPG)
-
-
-{{ page.horizontal}}
-
-## Effective yield values 
-
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img10.JPG)
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img22.TIF)
 
 
 {{ page.horizontal}}
 
-## Magnified Stress-Strain curve for 6 structures
+## Stress-Strain Curves for Contrast Ratio 5
 
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img11.JPG)
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img23.TIF)
 
 
 {{ page.horizontal}}
 
-## Diiferent contrast
+## Stress-Strain Curves for all
 
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img12.JPG)
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation1/img24.TIF)
+
 
 
 {{ page.horizontal}}
 
 ## Questions to address
 
-* Property definition: Effective Yield, Damage
-* Which variable to output for Damage? How to transfer data?
-* Completeness of input data (how many data points?)
-* Standardization of 2-phase data generation (sample space bounding)
+
 
 
 <!-- End Here -->
