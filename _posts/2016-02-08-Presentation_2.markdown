@@ -72,28 +72,28 @@ vertical:		</section><section markdown="1">
 
 ## Stress-Strain Curves for Contrast Ratio 1.5
 
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img21.tif)
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img21.JPG)
 
 
 {{ page.horizontal}}
 
 ## Stress-Strain Curves for Contrast Ratio 3
 
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img22.tif)
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img22.JPG)
 
 
 {{ page.horizontal}}
 
 ## Stress-Strain Curves for Contrast Ratio 5
 
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img23.tif)
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img23.JPG)
 
 
 {{ page.horizontal}}
 
 ## Stress-Strain Curves for all
 
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img24.tif)
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img24.JPG)
 
 
 
