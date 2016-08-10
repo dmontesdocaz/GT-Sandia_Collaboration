@@ -72,6 +72,12 @@ vertical:		</section><section markdown="1">
 
 ## 
 
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img35.JPG)
+
+{{ page.horizontal}}
+
+## 
+
 ![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img31.JPG)
 
 {{ page.horizontal}}
