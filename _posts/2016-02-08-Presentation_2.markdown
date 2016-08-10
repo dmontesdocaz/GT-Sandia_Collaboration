@@ -56,7 +56,7 @@ vertical:		</section><section markdown="1">
 ![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img28.JPG)
 
 
-{{ page.horizontal}}
+{{ page.vertical}}
 
 ## 
 
