@@ -70,11 +70,6 @@ vertical:		</section><section markdown="1">
 
 {{ page.horizontal}}
 
-## 
-
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img35.JPG)
-
-{{ page.horizontal}}
 
 ## 
 
