@@ -128,7 +128,17 @@ vertical:		</section><section markdown="1">
 
 ![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/img24.jpg)
 
+{{ page.horizontal}}
 
+## Stress-Strain Curves for all
+
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/modelfit1.jpg)
+
+{{ page.horizontal}}
+
+## Stress-Strain Curves for all
+
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/expr.jpg)
 
 {{ page.horizontal}}
 
