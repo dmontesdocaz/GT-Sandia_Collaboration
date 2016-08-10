@@ -132,13 +132,13 @@ vertical:		</section><section markdown="1">
 
 ## Stress-Strain Curves for all
 
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/modelfit1.jpg)
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/modelfit1.JPG)
 
 {{ page.horizontal}}
 
 ## Stress-Strain Curves for all
 
-![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/expr.jpg)
+![Picture]({{ site.url }}/GT-Sandia_Collaboration/img/img_presentation/presentation2/expr.JPG)
 
 {{ page.horizontal}}
 
